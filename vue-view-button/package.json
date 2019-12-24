@@ -38,8 +38,13 @@
       "no-console": "off",
       "no-debugger": "off"
     },
+    "plugins": [
+      "html"
+    ],
     "parserOptions": {
-      "parser": "babel-eslint"
+      "parser": "babel-eslint",
+      "sourceType": "module"
+
     }
   },
   "browserslist": [

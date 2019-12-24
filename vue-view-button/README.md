@@ -1,12 +1,14 @@
+### demo地址
+[demo演示页面](https://github.com/onlyH/vue/tree/vue-view-button/vue-view-button/dist/#/, '演示页面')
 ### 插件的安装
 #### NPM 
 ```
-npm i vpay
+npm i vue-view-button
 ```
 #### 引入插件
 ```
 import Vue from 'vue';
-import vpay from 'vpay';
+import vpay from 'vue-view-button';
 
 Vue.use(vpay);
 ```
