@@ -1,4 +1,25 @@
+### 插件的安装
+#### NPM 
+```
+npm i vpay
+```
+#### 引入插件
+```
+import Vue from 'vue';
+import vpay from 'vpay';
 
+Vue.use(vpay);
+```
+
+#### 基本用法  
+```html
+<vpay ref="pays"
+    v-model="show"           
+    @close="close"
+    @forget="forget"
+    @input-end="inputEnd"
+></vpay>
+```
 #### 使用说明
 
 
