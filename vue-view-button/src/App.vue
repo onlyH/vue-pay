@@ -1,14 +1,15 @@
 <template>
   <div id="app">
-    <h3 class="index-title">模拟密码为：111111</h3>
-    <div
+    <h3 class="index-title">默认密码为：111111</h3>
+    <button
         class="submit-btn"
         @click="onShowPay"
-    >点击显示支付弹窗
-    </div>
+    >支付
+    </button>
     <vpay
         ref="pays"
         v-model="show"
+        :forward="forward"
         @close="close"
         @forget="forget"
         @input-end="inputEnd"
@@ -24,6 +25,7 @@
     data() {
       return {
         show: false,
+        forward: false
       };
     },
     components: {
@@ -41,12 +43,14 @@
         this.show = true;
       },
       forget() {
-        console.log("触发forget");
-        alert('敬请期待')
-        this.show = false
+        this.forward = true
+        setTimeout(() => {
+          this.forward = false
+          // this.show = false
+        }, 2000)
       },
       close() {
-        console.log("关闭");
+
       },
       inputEnd(val) {
         setTimeout(() => {
@@ -54,11 +58,9 @@
             // 调用插件的$success方法告知插件支付成功
             // 并且在then方法里面可以写支付成功的回调，例如可以跳转支付结果页面
             this.$refs.pays.$success().then(res => {
-              console.log(res, "支付成功");
-              this.$router.push("/success");
+              console.log(res)
             });
           } else {
-            //  失败
             this.$refs.pays.$fail();
           }
         }, 1000);
@@ -70,5 +72,5 @@
 <style>
   .submit-btn {
     cursor: pointer;
-}
+  }
 </style>

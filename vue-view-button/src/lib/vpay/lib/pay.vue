@@ -87,7 +87,11 @@
           </div>
         </div>
       </div>
-
+      <div
+          class="forward"
+          v-show="forward"
+      >敬请期待
+      </div>
   </div>
 </template>
 
@@ -192,6 +196,10 @@
       forgetPassword: {
         type: Boolean,
         default: true
+      },
+      forward: {
+        type: Boolean,
+        default: false
       }
     },
     methods: {
@@ -203,16 +211,13 @@
           this.password = this.password.slice(0, this.password.length - 1);
         }
       },
-      //取消支付
       cancel() {
         // 支付中不允许取消
         if (this.payStatus === 1) return;
         this.password = "";
         // 恢复支付状态
         this.payStatus = 0;
-        //关闭组件，并触发父子组件数据同步
         this.$emit("change", false);
-        //  触发父组件close自定义事件
         this.$emit("close");
       },
       forget() {
@@ -234,7 +239,6 @@
         });
       },
       $fail() {
-        // tip && typeof tip === "string" && (this.failTip = tip);
         this.payStatus = 0;
         this.isShowFail = true;
       }
@@ -271,6 +275,18 @@
     align-content: center;
   }
 
+  .forward {
+    position: absolute;
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    background: #eee;
+    text-align: center;
+    top: 30%;
+    left: 35%;
+    border-radius: 10px;
+    z-index: 999;
+  }
   .cursor {
     cursor: pointer;
   }
