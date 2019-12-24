@@ -1,5 +1,5 @@
 ### demo地址
-[demo演示页面](https://github.com/onlyH/vue/vue-view-button/dist/index.html/#, '演示页面')
+[demo演示页面](https://github.com/onlyH/vue/tree/vue-view-button/vue-view-button/dist/index.html/#, '演示页面')
 ### 插件的安装
 #### NPM 
 ```
