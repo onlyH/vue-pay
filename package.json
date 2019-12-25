@@ -36,8 +36,7 @@
     ],
     "rules": {
       "no-console": "off",
-      "no-debugger": "off",
-      "parser": "vue-eslint-parser"
+      "no-debugger": "off"
     },
     "plugins": [
       "html"
