@@ -1,24 +1,53 @@
 {
   "name": "vue-view-button",
-  "version": "1.0.0",
-  "description": "支付弹窗组件",
-  "main": "index.js",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "eslint --fix --ext .js,.vue src"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/onlyH/vue.git"
+  "dependencies": {
+    "core-js": "^3.4.3",
+    "vue": "^2.6.10",
+    "vue-router": "^3.1.3"
   },
-  "keywords": [
-    "vpay",
-    "vue-vpay",
-    "passworld"
-  ],
-  "author": "github.com/onlyh",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/onlyH/vue/issues"
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.1.0",
+    "@vue/cli-plugin-eslint": "^4.1.0",
+    "@vue/cli-plugin-router": "^4.1.0",
+    "@vue/cli-service": "^4.1.0",
+    "@vue/eslint-config-prettier": "^5.0.0",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^5.16.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-vue": "^5.0.0",
+    "prettier": "^1.19.1",
+    "vue-template-compiler": "^2.6.10"
   },
-  "homepage": "https://github.com/onlyH/vue#readme"
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "@vue/prettier"
+    ],
+    "rules": {
+      "no-console": "off",
+      "no-debugger": "off"
+    },
+    "plugins": [
+      "html"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint",
+      "sourceType": "module"
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
 }
