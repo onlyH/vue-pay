@@ -1,14 +1,14 @@
 ### demo地址
-[demo演示页面](http://haoline.cn/vpay/dist/#/, '演示页面')
+[demo演示页面](http://haoline.cn/vue-pay/dist/#/, '演示页面')
 ### 插件的安装
 #### NPM 
 ```
-npm i vue-view-button
+npm i vue-pay
 ```
 #### 引入插件
 ```
 import Vue from 'vue';
-import vpay from 'vue-view-button';
+import vpay from 'vue-pay';
 
 Vue.use(vpay);
 ```

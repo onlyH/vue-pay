@@ -1,5 +1,5 @@
 {
-  "name": "vue-view-button",
+  "name": "vue-pay",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -36,7 +36,8 @@
     ],
     "rules": {
       "no-console": "off",
-      "no-debugger": "off"
+      "no-debugger": "off",
+      "parser": "vue-eslint-parser"
     },
     "plugins": [
       "html"
