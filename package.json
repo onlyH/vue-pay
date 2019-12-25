@@ -1,0 +1,24 @@
+{
+  "name": "vue-view-button",
+  "version": "1.0.0",
+  "description": "支付弹窗组件",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/onlyH/vue.git"
+  },
+  "keywords": [
+    "vpay",
+    "vue-vpay",
+    "passworld"
+  ],
+  "author": "github.com/onlyh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/onlyH/vue/issues"
+  },
+  "homepage": "https://github.com/onlyH/vue#readme"
+}
