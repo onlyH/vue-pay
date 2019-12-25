@@ -1,5 +1,5 @@
 ### demo地址
-[demo演示页面](http://haoline.cn/vpay/dist/#/,, '演示页面')
+[demo演示页面](http://haoline.cn/vpay/dist/#/, '演示页面')
 ### 插件的安装
 #### NPM 
 ```
